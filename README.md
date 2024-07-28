@@ -1,43 +1,41 @@
-<p align="center" width="100%">
-    <img width="50%" src="https://github.com/buildrun-tech/buildrun-desafio-backend-magalu/blob/main/images/logo-magalu.png"> 
-</p>
+**Bem-vindo(a) ao nosso processo seletivo**
 
+**Cenário**
 
-<h3 align="center">
-  Desafio Backend da Magalu
-</h3>
+O Magalu tem o desafio de desenvolver uma plataforma de comunicação. Você foi escolhido(a) para iniciar o desenvolvimento da primeira sprint.
 
-<p align="center">
+**Requisitos**
 
-  <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-%2304D361">
-  <img alt="Language: Java" src="https://img.shields.io/badge/language-java-green">
-  <img alt="Version: 1.0" src="https://img.shields.io/badge/version-1.0-yellowgreen">
+- **Deve ter um endpoint que receba uma solicitação de agendamento de envio de comunicação (1):**
+    - Este endpoint precisa ter no mínimo os seguintes campos:
+        - Data/Hora para o envio
+        - Destinatário
+        - Mensagem a ser entregue
+    - As possíveis comunicações que podem ser enviadas são: email, SMS, push e WhatsApp.
+    - Neste momento, precisamos deste canal de entrada para realizar o envio, ou seja, esse endpoint (1). O envio em si não será desenvolvido nesta etapa: você não precisa se preocupar com isso.
+    - Para esta sprint ficou decidido que a solicitação do agendamento do envio da comunicação será salva no banco de dados. Portanto, assim que receber a solicitação do agendamento do envio (1), ela deverá ser salva no banco de dados.
+    - Pense com carinho nessa estrutura do banco. Apesar de não ser você quem vai realizar o envio, a estrutura já precisa estar pronta para que o seu coleguinha não precise alterar nada quando for desenvolver esta funcionalidade. A preocupação no momento do envio será de enviar e alterar o status do registro no banco de dados.
 
-</p>
+- **Deve ter um endpoint para consultar o status do agendamento de envio de comunicação (2):**
+    - O agendamento será feito no endpoint (1) e a consulta será feita por este outro endpoint.
 
-[Se inscreva em nosso canal no Youtube!](https://www.youtube.com/@buildrun-tech?sub_confirmation=1)
+- **Deve ter um endpoint para remover um agendamento de envio de comunicação.**
 
-Para um maior entendimento do código deste repositório, [assista nosso vídeo no Youtube, clique aqui.](https://www.youtube.com/watch?v=af4W9Q4vB1s)
+**Observações e Orientações Gerais**
 
-## Desafio
-- Confira o enunciado completo, [clicando aqui](./problem.md).
+- Temos preferência por desenvolvimento na linguagem Java, Python ou Node, mas pode ser usada qualquer linguagem; depois, apenas nos explique o porquê da sua escolha.
+- Utilize um dos bancos de dados abaixo:
+    - MySQL
+    - PostgreSQL
+- As APIs deverão seguir o modelo RESTful com formato JSON.
+- Faça testes unitários, foque em uma suíte de testes bem organizada.
+- Siga o que considera como boas práticas de programação.
+- A criação do banco e das tabelas fica a seu critério de como será feita, seja via script, aplicação, etc.
 
-## Como interagir com o banco de dados?
-- Utilizamos o [Beekeeper Community](https://github.com/beekeeper-studio/beekeeper-studio/releases/tag/v4.1.13)
+Seu desafio deve ser enviado preferencialmente como repositório GIT público (Github, Gitlab, Bitbucket), com commits pequenos e bem descritos, ou como arquivo compactado (ZIP ou TAR). O seu repositório deve estar com um modelo de licença de código aberto. Não envie nenhum arquivo além do próprio código compactado e sua documentação. Tome cuidado para não enviar imagens, vídeos, áudio, binários, etc.
 
-## Como interagir com a API?
-- Utilizamos o [Bruno](https://github.com/usebruno/bruno)
+Siga boas práticas de desenvolvimento, de qualidade e de governança de código. Oriente os avaliadores a como instalar, testar e executar seu código: pode ser um README dentro do projeto.
 
-## :rocket: Tecnologias utilizadas
+Iremos avaliar seu desafio de acordo com a posição e o nível que você está se candidatando.
 
-* Java 21
-* Spring Boot
-* Spring Data JPA
-* Spring Scheduler
-* Docker
-
-:mag: Baixe o projeto e teste você mesmo na prática.
-
-[Conheça mais sobre o nosso trabalho 😀](https://www.instagram.com/buildrun.tech/)
-
-Developed by Build & Run
+Agradecemos muito sua disposição de participar do nosso processo seletivo e desejamos que você se divirta e que tenha boa sorte :)
